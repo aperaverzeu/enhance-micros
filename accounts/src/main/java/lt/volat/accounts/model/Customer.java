@@ -12,7 +12,6 @@ import java.time.LocalDate;
 @Setter
 @ToString
 public class Customer {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "customer_id")
@@ -23,5 +22,4 @@ public class Customer {
     private String mobileNumber;
     @Column(name = "create_dt")
     private LocalDate createDt;
-
 }

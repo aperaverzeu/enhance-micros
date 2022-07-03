@@ -1,4 +1,4 @@
-package lt.volat.loans.config;
+package lt.volat.cards.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -8,12 +8,11 @@ import java.util.List;
 import java.util.Map;
 
 @Configuration
-@ConfigurationProperties(prefix = "loans")
+@ConfigurationProperties(prefix = "cards")
 @Data
-public class LoansServiceConfig {
+public class CardsServiceConfiguration {
     private String msg;
     private String buildVersion;
     private Map<String, String> mailDetails;
     private List<String> activeBranches;
-
 }
